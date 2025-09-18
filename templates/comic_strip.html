@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comic Strip</title>
+</head>
+<body>
+    <h1>Story Comic Strip</h1>
+    <div style="display:flex;flex-wrap:wrap;">
+        {% for img in images %}
+            <div style="margin:10px;">
+                <img src="data:image/png;base64,{{ img }}" style="width:320px;height:auto;border:2px solid #333;" />
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

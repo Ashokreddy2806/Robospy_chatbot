@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File "C:\project-robopsy\RobopsyApp\helper_scripts\start_django.ps1"

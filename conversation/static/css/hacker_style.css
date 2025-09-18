@@ -1,0 +1,99 @@
+body, html {
+    background-color: black;
+}
+
+h2, h4 {
+    color: lawngreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#chat_output {
+    max-height: 37vw;
+    background-color: black;
+    color: lawngreen;
+    font-size: 1.5rem;;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-y: auto;
+    scrollbar-color: lawngreen black;
+    white-space: pre-line;
+}
+
+#user_input {
+    background-color: black;
+    color: black;
+    font-size: 0.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px lawngreen;
+    outline: none;
+}
+
+.border-terminal {
+    position: relative;
+    border: 1px solid lawngreen;
+    color: lawngreen;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1.5rem 0.75rem 0.75rem 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.border-terminal h3 {
+    position: absolute;
+    top: -0.75rem;
+    left: 0.75rem;
+    background-color: black;
+    padding: 0 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.green-bar-wrapper {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.green-bar {
+    background-color: lawngreen;
+    height: 1.5rem;
+    position: relative;
+    display: block;
+    font-weight: bold;
+    color: transparent;
+    padding-left: 0.5rem;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
+.bar-label {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-weight: bold;
+}
+
+.typing {
+      display: inline-block;
+      font-size: 2rem;
+      letter-spacing: 0.2em;
+    }
+
+    .typing span {
+      animation: blink 1.4s infinite;
+    }
+
+    .typing span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .typing span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      100% { opacity: 0; }
+    }
